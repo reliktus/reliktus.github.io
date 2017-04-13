@@ -1,0 +1,54 @@
+.container-fluid {
+    font-size: 15px;
+    padding-top: 30px;
+    padding-bottom: 70px;
+}
+.btn {
+    background-color:#909090;
+    color: #fff;
+    font-size: 15px;
+}
+
+.glyphicon {
+    padding-right: 5px;
+}
+.bg-1 {
+    background-color: #c1d7d7;
+    color: #ffffff;
+}
+
+.bg-2 {
+    background-color: #8c94a6;
+    color: #ffffff;
+}
+
+.bg-3 {
+    background-color: #ffffff; /* White */
+    color: #555555;
+}
+
+.bg-4 {
+    background-color: #2f2f2f;
+    color: #ffffff;
+}
+
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+}
+
+.navbar-nav li a:hover {
+    color: #1abc9c !important;
+}
+.back-to-top {
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display:none;
+}
