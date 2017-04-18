@@ -3,45 +3,52 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
 </head>
 <body>
 
-<nav class="navbar navbar-light .navbar-fixed-top">
+<nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Me</a>
+      <a class="navbar-brand" href="#">Rafał Jaworski</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">WHO</a></li>
-        <li><a href="#">WHAT</a></li>
-        <li><a href="#">WHERE</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#projects">PROJECTS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
-<div id="who" class="container-fluid text-center bg-1">
-    <H2> O mnie </H2>
-    <img class="img-circle img-responsive" style="display:inline" src="https://scontent-waw1-1.xx.fbcdn.net/v/t1.0-9/13620774_673516602802986_314355125567391994_n.jpg?oh=0b4627387d1ee1b5112ed0316b58f7b2&oe=58FDF4D7">
+<div id="about" class="container-fluid text-center bg-1">
+    <H2>Skills and Areas of interest</H2>
+    <p>HTML - CSS - JavaScript - jQuery - Bootstrap - Batch - GIT - Intellij</p>
+    <p>Active_Directory - Thin_Compute - VBA - RDP - IT Support</p>
+
 </div>
 
-<div id="what" class="container-fluid text-center bg-2">
-    <h2>Informacje o mnie</h2>
-    <p>This are info about me. Test</p>
+<div id="projects" class="container-fluid text-center bg-2">
+    <h2>Projects</h2>
+    <p>Some of my Front-End projects:</p>
     <div class="row">
         <div class="col-sm-4">
-            <p>Lorem ipsum..</p>
-            <img src="https://www.w3schools.com/bootstrap/birds1.jpg" alt="Image" >
+            <p>Simple weather App</p>
+            <a href="http://codepen.io/relikt/full/XMxGoW/" target="_blank">
+                <img src="img/weather_app_thumb.png" alt="Weather App" ></a>
         </div>
         <div class="col-sm-4">
             <p>Lorem ipsum..</p>
@@ -55,21 +62,23 @@
 </div>
 
 <div id="contact" class="container-fluid text-center bg-3">
-    <h2>Kontakt</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco  laboris nisi ut aliquip ex ea commodo consequat.</p>
-    <a href="#" class="btn btn-default btn-lg "><span class="glyphicon glyphicon-user"></span> Linkedin</a>
-    <a href="#" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-thumbs-up"></span> Facebook</a>
-    <a href="http://codepen.io/relikt/" target="_blank" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-folder-open"></span> Codepen.io</a>
+    <h2>Contact</h2>
+    <p>Follow me</p>
+    <a href="https://www.linkedin.com/in/rafa%C5%82-jaworski-528437a1/" class="btn btn-default btn-lg ">
+        <span class="glyphicon glyphicon-user"></span> Linkedin</a>
+    <a href="https://www.facebook.com/reliktus" class="btn btn-default btn-lg">
+        <span class="glyphicon glyphicon-thumbs-up"></span> Facebook</a>
+    <a href="http://codepen.io/relikt/" target="_blank" class="btn btn-default btn-lg">
+        <span class="glyphicon glyphicon-folder-open"></span> Codepen.io</a>
 </div>
 
-
-<footer class="container-fluid bg-4 text-center">
-    <p>Theme by RLKT powered by Bootstrap</p>
-    <!-- return button -->
-    <a id="back-to-top" href="#" class="btn btn-lg back-to-top" role="button" title="Click to return on the top page"
-       data-toggle="tooltip" data-placement="left">
-        <span class="glyphicon glyphicon-chevron-up"></span>
-    </a>
+<footer class="bg-4 text-center h-1">
+    <p>Powered by bootstrap, based on www.w3schools.com</p>
 </footer>
+<!-- return button -->
+<a id="back-to-top" href="#" class="btn btn-lg back-to-top hidden" role="button" title="Click to return on the top page"
+   data-toggle="tooltip" data-placement="left">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+</a>
 </body>
 </html>

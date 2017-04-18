@@ -1,3 +1,13 @@
+body {
+    font: 20px Montserrat, sans-serif;
+    line-height: 1.8;
+    color: #f5f6f7;
+}
+footer {
+    padding: 20px;
+    font-size: 15px;
+}
+
 .container-fluid {
     font-size: 15px;
     padding-top: 30px;
@@ -14,6 +24,7 @@
 .bg-1 {
     background-color: #c1d7d7;
     color: #ffffff;
+    padding-top: 120px;
 }
 .bg-2 {
     background-color: #8c94a6;
@@ -28,6 +39,7 @@
     color: #ffffff;
 }
 .navbar {
+    background-color: white;
     padding-top: 15px;
     padding-bottom: 15px;
     border: 0;
@@ -35,6 +47,7 @@
     margin-bottom: 0;
     font-size: 12px;
     letter-spacing: 5px;
+    box-shadow: 0px 0px 25px #d1d1d1;
 }
 .navbar-nav li a:hover {
     color: #1abc9c !important;
