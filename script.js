@@ -1,3 +1,5 @@
-$(document).ready(function(){
-    $("img").addClass("img-responsive")
-});
+function imgStyler() {
+
+        $("img").addClass("img-responsive img-rounded")
+
+}
