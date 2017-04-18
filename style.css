@@ -8,7 +8,6 @@
     color: #fff;
     font-size: 15px;
 }
-
 .glyphicon {
     padding-right: 5px;
 }
@@ -16,22 +15,18 @@
     background-color: #c1d7d7;
     color: #ffffff;
 }
-
 .bg-2 {
     background-color: #8c94a6;
     color: #ffffff;
 }
-
 .bg-3 {
     background-color: #ffffff; /* White */
     color: #555555;
 }
-
 .bg-4 {
     background-color: #2f2f2f;
     color: #ffffff;
 }
-
 .navbar {
     padding-top: 15px;
     padding-bottom: 15px;
@@ -41,7 +36,6 @@
     font-size: 12px;
     letter-spacing: 5px;
 }
-
 .navbar-nav li a:hover {
     color: #1abc9c !important;
 }
