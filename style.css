@@ -8,8 +8,8 @@ footer {
     font-size: 15px;
 }
 .lastName {
-    color: #ffffff;
-    text-shadow: 0px 0px 1px #4a4b4c;
+    color: #c2c2c2;
+    text-shadow: 0px 0px 0px #4a4b4c;
 }
 .projectImg {
     margin: 0 auto;
@@ -35,7 +35,7 @@ footer {
     padding-top: 100px;
 }
 .bg-2 {
-    background-color: #8c94a6;
+    background-color: #828485;
     color: #ffffff;
 }
 .bg-3 {
@@ -48,7 +48,7 @@ footer {
 }
 .navbar {
     background-color: white;
-    padding-top: 0px;
+    padding-top: 5px;
     padding-bottom: 0px;
     border: 0;
     border-radius: 0;
