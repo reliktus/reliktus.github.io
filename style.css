@@ -11,6 +11,9 @@ footer {
     color: #c2c2c2;
     text-shadow: 0px 0px 0px #4a4b4c;
 }
+.center-block{
+    float: none !important;
+}
 .projectImg {
     margin: 0 auto;
 }
