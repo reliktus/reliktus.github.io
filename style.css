@@ -37,6 +37,7 @@ footer {
 .bg-2 {
     background-color: #828485;
     color: #ffffff;
+    padding-top: 0px;
 }
 .bg-3 {
     background-color: #ffffff;
