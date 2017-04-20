@@ -30,8 +30,10 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#about">Rafał <span class="lastName">Jaworski</span>
-            <i class="fa fa-location-arrow"></i></a>
+        <a class="navbar-brand" href="#about">
+            Rafał<span class="lastName">Jaworski</span>
+            <i class="fa fa-location-arrow"></i>
+        </a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
@@ -45,8 +47,11 @@
 
 <div id="about" class="container-fluid text-center bg-1">
     <H2>Skills & Areas of interest</H2>
-    <p>HTML - CSS - JavaScript - jQuery - JSON - API - Bootstrap - Batch - GIT - Intellij - Eclipse</p>
-    <p>Active_Directory - Thin_Compute - VBA - RDP - IT Support - Data Restoration</p>
+    <div class="center-block about col-sm-7">
+        <script>
+            skillsList();
+        </script>
+    </div>
 </div>
 
 <div id="projects" class="container-fluid text-center bg-2">
@@ -65,7 +70,7 @@
                 <img class="projectImg" src="img/wiki_codepen.png" alt="Image">
             </a>
         </div>
-        <div class="col-sm-4 img-responsive">
+        <div class="col-sm-4">
             <p>Lorem ipsum..</p>
             <img class="projectImg" src="https://www.w3schools.com/bootstrap/birds3.jpg" alt="Image">
         </div>
@@ -84,10 +89,11 @@
             <i class="fa fa-github-square"></i> Github</a>
         <a href="http://codepen.io/relikt/" target="_blank" class="btn btn-default btn-lg">
             <i class="fa fa-codepen"></i> Codepen.io</a>
-        <script>
-            document.write("<a href=\"" + mScript1 + mail_user + mScript2 + domain + "\"class=\"btn btn-default btn-lg\">")
-        </script>
-            <i class="fa fa-envelope" aria-hidden="true"></i> jaworski.inf@gmail.com</a>
+            <script>
+                document.write("<a href=\"" + mScript1 + mail_user + mScript2 + domain + "\"class=\"btn btn-default btn-lg\">")
+            </script>
+            <i class="fa fa-envelope" aria-hidden="true"></i> jaworski.inf@gmail.com
+        </a>
 
 </div>
 

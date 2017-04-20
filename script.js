@@ -1,12 +1,15 @@
+// Mail script variables
 var mail_user = 'jaworski.inf';
 var domain ='gmail.com';
 var mScript1 ="mailto:";
 var mScript2 ="@";
 
+//Projects Image Styler Query
 function imgStyler() {
         $(".projectImg").addClass("img-responsive img-rounded ")
 }
 
+// Smooth scrool to anchor query
 function smoothScroll() {
     $('a[href*="#"]:not([href="#"])').click(function() {
         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -20,4 +23,18 @@ function smoothScroll() {
             }
         }
     });
+}
+
+// Skills list
+function skillsList() {
+    var skillsArr = ["HTML", "CSS", "JavaScript", "jQuery", "JSON", "API", "Bootstrap", "Batch", "GIT", "Intellij", "Eclipse",
+    "Active Directory", "IBM iSeries", "Thin Compute", "VBA", "RDP", "IT Support", "Data Restoration"];
+    var skillsHTML="";
+    for (var i = 0; i < skillsArr.length; i++) {
+        skillsHTML += "<div style=\"display:inline-block;\"><b>{</b> " + skillsArr[i] + " <b>}</b></div>";
+        if (i < skillsArr.length - 1) {
+            skillsHTML += " / "
+        }
+    }
+    document.write(skillsHTML);
 }
