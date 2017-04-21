@@ -28,9 +28,6 @@ footer {
 }
 /* Disable grayscale on hover */
 .projectImg:hover {
-    // border-style: solid;
-    // border-width: 1px;
-    // border-color: #212222;
     -webkit-filter: grayscale(0);
     filter: none;
 }
@@ -57,7 +54,7 @@ footer {
 .bg-2 {
     background-color: #828485;
     color: #ffffff;
-    padding-top: 0px;
+    padding-top: 0;
 }
 .bg-3 {
     background-color: #ffffff;
@@ -75,7 +72,7 @@ footer {
     margin-bottom: 0;
     font-size: 12px;
     letter-spacing: 5px;
-    box-shadow: 0px 0px 25px #d1d1d1;
+    box-shadow: 0 0 25px #d1d1d1;
 }
 .navbar-default .navbar-nav>li>a {
     color: #777;
@@ -89,7 +86,7 @@ footer {
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
     color: #fef9ff !important;
-    text-shadow: 0px 0px 15px #fafdff;
+    text-shadow: 0 0 15px #fafdff;
     background-color: rgb(193, 215, 215) !important;
     background-image: none !important;
 }

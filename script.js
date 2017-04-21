@@ -4,9 +4,10 @@ var domain ='gmail.com';
 var mScript1 ="mailto:";
 var mScript2 ="@";
 
-//Projects Image Styler Query
+//Projects Image and follow Styler Query
 function imgStyler() {
-        $(".projectImg").addClass("img-responsive img-rounded ")
+    $(".projectImg").addClass("img-responsive img-rounded ");
+    $(".follow").addClass("btn btn-default btn-lg").attr('target','_blank');
 }
 
 // Smooth scrool to anchor query
@@ -27,8 +28,8 @@ function smoothScroll() {
 
 // Skills list
 function skillsList() {
-    var skillsArr = ["HTML", "CSS", "JavaScript", "jQuery", "JSON", "API", "Bootstrap", "Batch", "GIT", "Intellij", "Eclipse",
-    "Active Directory", "IBM iSeries", "Thin Compute", "VBA", "RDP", "IT Support", "Data Restoration"];
+    var skillsArr = ["HTML","CSS","JavaScript","jQuery","JSON","API","Bootstrap","Batch","GIT","Intellij","Eclipse",
+        "Active Directory","IBM iSeries","Thin Compute","VBA","RDP","Nagios","IT Support","Data Restoration","VNC","DLNA"];
     var skillsHTML="";
     for (var i = 0; i < skillsArr.length; i++) {
         skillsHTML += "<div style=\"display:inline-block;\"><b>{</b> " + skillsArr[i] + " <b>}</b></div>";
