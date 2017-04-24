@@ -7,12 +7,19 @@ footer {
     padding: 20px;
     font-size: 15px;
 }
+.linkItem {
+    color: #828485;
+    font-size: 25px;
+}
 .lastName {
     color: #c2c2c2;
     text-shadow: 0px 0px 0px #4a4b4c;
 }
 .center-block{
     float: none !important;
+}
+.sectionTittle {
+    margin: 50px;
 }
 .projectImg {
     margin: 0 auto;
@@ -49,18 +56,20 @@ footer {
 .bg-1 {
     background-color: #c1d7d7;
     color: #ffffff;
-    padding-top: 100px;
 }
 .bg-2 {
     background-color: #828485;
     color: #ffffff;
-    padding-top: 0;
 }
 .bg-3 {
+    background-color: #c1d7d7;
+    color: #ffffff;;
+}
+.bg-4 {
     background-color: #ffffff;
     color: #555555;
 }
-.bg-4 {
+.bg-5 {
     background-color: #2f2f2f;
     color: #ffffff;
 }
@@ -81,7 +90,6 @@ footer {
 .navbar-nav li a:hover {
     color: #b2cbdb !important;
 }
-
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
