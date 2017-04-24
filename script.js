@@ -1,3 +1,13 @@
+function mobileNavbarCollpase() {
+    $(".navbar-nav li a").click(function(event) {
+        if (!$(this).parent().hasClass('dropdown'))
+            $(".navbar-collapse").collapse('hide');
+    });
+}
+$(".navbar-nav li a").click(function(event) {
+    if (!$(this).parent().hasClass('dropdown'))
+        $(".navbar-collapse").collapse('hide');
+});
 function imgStyler() {
     $(".projectImg").addClass("img-responsive img-rounded ");
     $(".follow").addClass("btn btn-default btn-lg").attr('target','_blank');
