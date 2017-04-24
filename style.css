@@ -13,7 +13,7 @@ footer {
 }
 .lastName {
     color: #c2c2c2;
-    text-shadow: 0px 0px 0px #4a4b4c;
+    text-shadow: 0 0 0 #4a4b4c;
 }
 .center-block{
     float: none !important;
@@ -24,7 +24,7 @@ footer {
 .projectImg {
     margin: 0 auto;
     border-style: solid;
-    border-width: 0px;
+    border-width: 0;
     filter: gray; /* IE6-9 */
     -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
     filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
@@ -95,6 +95,5 @@ footer {
 .navbar-default .navbar-nav > .active > a:focus {
     color: #fef9ff !important;
     text-shadow: 0 0 15px #fafdff;
-    background-color: rgb(193, 215, 215) !important;
-    background-image: none !important;
+    background: rgb(193, 215, 215) none !important;
 }
