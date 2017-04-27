@@ -92,7 +92,7 @@ function linkList() {
     for (x in linkData) {
         if (linkData.hasOwnProperty(x)) {
             linkHTML +=
-                "<div style=\"display:ruby \">" +
+                "<div>" +
                 "<a href=\"" + linkData[x].laddr + "\" class=\"linkItem \">" + linkData[x].lname + "</a>" +
                 "</div>"
 
