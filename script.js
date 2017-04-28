@@ -24,7 +24,7 @@ function smoothScroll() {
 }
 function skillsList() {
     var skillsArr = [
-        "HTML 5","CSS 3","JavaScript ES6","JQuery","JSON","API","Bootstrap","Batch","GIT","Intellij","Eclipse",
+        "HTML 5","CSS 3","JavaScript","JQuery","JSON","API","Bootstrap","Batch","GIT","Intellij","Eclipse",
         "Active Directory","IBM iSeries","Thin Compute","VBA","RDP","Nagios","IT Support","Data Restoration","VNC","DLNA"
     ];
     var skillsHTML ="";
