@@ -64,7 +64,7 @@ function followList() {
         "2":{fname:"Facebook", flink:"https://www.facebook.com/reliktus", iclass:"fa-facebook-square"},
         "3":{fname:"GitHub", flink:"https://github.com/reliktus", iclass:"fa-github-square"},
         "4":{fname:"Codepen", flink:"http://codepen.io/relikt/", iclass:"fa-codepen"},
-        "5":{fname:mFull, flink:mFullLink, iclass:"fa-envelope"},
+        "5":{fname:mFull, flink:mFullLink, iclass:"fa-envelope"}
     };
     for (x in followData) {
         if (followData.hasOwnProperty(x)) {
@@ -89,7 +89,8 @@ function linkList() {
         "7":{lname:"CODEPEN", laddr:"http://codepen.io/"},
         "8":{lname:"4programmers.NET", laddr:"https://4programmers.net/"},
         "9":{lname:"Norton Power Eraser", laddr:"https://security.symantec.com/nbrt/npe.aspx"},
-        "10":{lname:"Babel.js", laddr:"https://babeljs.io/"}
+        "10":{lname:"Babel.js", laddr:"https://babeljs.io/"},
+        "11":{lname:"Node.js", laddr:"https://nodejs.org"}
     };
     for (x in linkData) {
         if (linkData.hasOwnProperty(x)) {
