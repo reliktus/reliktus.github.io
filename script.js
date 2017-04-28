@@ -87,12 +87,13 @@ function linkList() {
         "5":{lname:"Animate.css", laddr:"https://daneden.github.io/animate.css/ "},
         "6":{lname:"JSFiddle", laddr:"https://jsfiddle.net/"},
         "7":{lname:"CODEPEN", laddr:"http://codepen.io/"},
-        "8":{lname:"4programmers.NET", laddr:"https://4programmers.net/}"}
+        "8":{lname:"4programmers.NET", laddr:"https://4programmers.net/"},
+        "9":{lname:"Norton Power Eraser", laddr:"https://security.symantec.com/nbrt/npe.aspx"}
     };
     for (x in linkData) {
         if (linkData.hasOwnProperty(x)) {
             linkHTML +=
-                "<div>" +
+                "<div style=\"display:ruby \">" +
                 "<a href=\"" + linkData[x].laddr + "\" class=\"linkItem \">" + linkData[x].lname + "</a>" +
                 "</div>"
 
