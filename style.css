@@ -7,6 +7,13 @@ footer {
     padding: 20px;
     font-size: 15px;
 }
+.col-centered {
+    display:inline-block;
+     float:none !important;
+    /* reset the text-align */
+    /* inline-block space fix */
+    margin-right:-4px;
+}
 #files a,
 #files a:active {
     font-size: 1.5em !important;
@@ -27,6 +34,7 @@ footer {
     color: #c2c2c2;
     text-shadow: 0 0 0 #4a4b4c;
 }
+
 .center-block{
     float: none !important;
 }

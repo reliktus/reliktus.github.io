@@ -60,7 +60,7 @@ function projectList() {
     for (x in projectsData) {
         if (projectsData.hasOwnProperty(x)) {
             projectHTML +=
-                "<div class=\"col-sm-4 \">" +
+                "<div class=\"col-sm-6 col-centered \">" +
                     "<p>" + projectsData[x].pname + "</p>" +
                     "<a href=\"" + projectsData[x].plink + "\" target=\"_blank\">" +
                     "<img class=\"projectImg\" src=\"" + projectsData[x].pimg + "\" alt=\"" + projectsData[x].pname + "\" ></a>" +
