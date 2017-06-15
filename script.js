@@ -55,7 +55,11 @@ function projectList() {
         "Twitch":{
             pname:"Twitch preview",
             plink:"http://codepen.io/relikt/full/dWawzm/",
-            pimg:"img/twitch_app.png"}
+            pimg:"img/twitch_app.png"},
+        "Algorithm scripting":{
+            pname:"Algorithms",
+            plink:"https://codepen.io/relikt/full/BZQKyJ/",
+            pimg:"img/algorithms.png"}
     };
     for (x in projectsData) {
         if (projectsData.hasOwnProperty(x)) {
