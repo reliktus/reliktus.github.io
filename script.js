@@ -24,7 +24,7 @@ function smoothScroll() {
 }
 function skillsList() {
     var skillsArr = [
-        "HTML 5","CSS 3","JavaScript","JQuery","Bootstrap","Batch","GIT","Intellij","Eclipse",
+        "HTML 5","CSS 3","JavaScript","JQuery","Bootstrap","Batch","GIT","Core JAVA","Intellij","Eclipse",
         "Active Directory","IBM iSeries","Thin Compute","VBA","RDP","Nagios","IT Support","Data Restoration","VNC","DLNA"
     ];
     var skillsHTML ="";
@@ -59,7 +59,11 @@ function projectList() {
         "Algorithm scripting":{
             pname:"Algorithms",
             plink:"https://codepen.io/relikt/full/BZQKyJ/",
-            pimg:"img/algorithms.png"}
+            pimg:"img/algorithms.png"},
+        "Calculator":{
+            pname:"Calculator",
+            plink:"https://codepen.io/relikt/full/qjKJbQ/",
+            pimg:"img/calc.png"}
     };
     for (x in projectsData) {
         if (projectsData.hasOwnProperty(x)) {
