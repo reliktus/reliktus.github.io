@@ -40,14 +40,31 @@ function projectList() {
     var projectHTML ="";
     var x;
     var projectsData ={
-        "weather":{pname:"Simple weather App", plink:"http://codepen.io/relikt/full/XMxGoW/", pimg:"img/weather_app_thumb.png"},
-        "wiki":{pname:"Wikipedia search", plink:"http://codepen.io/relikt/full/NpoaaQ/", pimg:"img/wiki_codepen.png"},
-        "Random quote":{pname:"Random quote", plink:"http://codepen.io/relikt/full/xqjQOL/", pimg:"img/quote_app.png"}
+        "weather":{
+            pname:"Simple weather App",
+            plink:"http://codepen.io/relikt/full/XMxGoW/",
+            pimg:"img/weather_app_thumb.png"},
+        "wiki":{
+            pname:"Wikipedia search",
+            plink:"http://codepen.io/relikt/full/NpoaaQ/",
+            pimg:"img/wiki_codepen.png"},
+        "Random quote":{
+            pname:"Random quote",
+            plink:"http://codepen.io/relikt/full/xqjQOL/",
+            pimg:"img/quote_app.png"},
+        "Twitch":{
+            pname:"Twitch preview",
+            plink:"http://codepen.io/relikt/full/dWawzm/",
+            pimg:"img/twitch_app.png"},
+        "Algorithm scripting":{
+            pname:"Algorithms",
+            plink:"https://codepen.io/relikt/full/BZQKyJ/",
+            pimg:"img/algorithms.png"}
     };
     for (x in projectsData) {
         if (projectsData.hasOwnProperty(x)) {
             projectHTML +=
-                "<div class=\"col-sm-4 \">" +
+                "<div class=\"col-sm-4 col-centered\">" +
                     "<p>" + projectsData[x].pname + "</p>" +
                     "<a href=\"" + projectsData[x].plink + "\" target=\"_blank\">" +
                     "<img class=\"projectImg\" src=\"" + projectsData[x].pimg + "\" alt=\"" + projectsData[x].pname + "\" ></a>" +
