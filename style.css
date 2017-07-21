@@ -46,13 +46,14 @@ footer {
     border: 0 solid;
     -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
     filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
-    -webkit-transition: filter .2s linear;
-    -moz-transition: filter .2s linear;
-    -o-transition: filter .2s linear;
-    transition: filter .2s linear, border-width .2s linear;
+    -webkit-transition: filter .3s linear;
+    -moz-transition: filter .3s linear;
+    -o-transition: filter .3s linear;
+    transition: filter .3s linear, box-shadow .3s linear;
 }
 /* Disable grayscale on hover */
 .projectImg:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     -webkit-filter: grayscale(0);
     filter: none;
 }
