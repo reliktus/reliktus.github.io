@@ -23,17 +23,21 @@ function smoothScroll() {
     });
 }
 function skillsList() {
-    var skillsArr = [
-        "HTML5","CSS 3","ES6","jQuery","Bootstrap","Batch","GIT","Core JAVA","Intellij","Eclipse",
+    let about ='<p><h4>Software Engineer with a passion for understanding things at a fundamental level.<br>' +
+                    'Fascinated about Front-end development and Java Script frameworks.<br>' +
+                    'Focusing on learning React.JS, Angular.JS and Node.JS ..</h4></p><br>' ;
+    let skillsArr = [
+        "HTML5","CSS 3","ES6","jQuery","Bootstrap","Batch","GIT","Core JAVA","Intellij","Eclipse", "CMS: Joo    mla",
         "Active Directory","IBM iSeries","Thin Compute","VBA","RDP","Nagios","IT Support","Data Restoration","VNC","DLNA"
     ];
-    var skillsHTML ="";
+    let skillsHTML ="";
     for (var i = 0; i < skillsArr.length; i++) {
         skillsHTML += "<div style=\"display:inline-block;\"><b>{</b> " + skillsArr[i] + " <b>}</b>";
         if (i < skillsArr.length -1) {
             skillsHTML += " /</div> ";
         } else { skillsHTML += "</div>"; }
     }
+    document.write(about);
     document.write(skillsHTML);
 }
 function projectList() {
@@ -63,7 +67,11 @@ function projectList() {
         "Calculator":{
             pname:"Calculator",
             plink:"https://codepen.io/relikt/full/qjKJbQ/",
-            pimg:"img/calc.png"}
+            pimg:"img/calc.png"},
+        "chodzki":{
+            pname:"Webpage based on Joomla CMS",
+            plink:"http://cmchodzki.pl",
+            pimg:"img/chodzki.png"}
     };
     for (x in projectsData) {
         if (projectsData.hasOwnProperty(x)) {
