@@ -11,7 +11,7 @@ function imgStyler() {
 function smoothScroll() {
     $('a[href*="#"]:not([href="#"])').click(function() {
         if (location.pathname.replace(/^\//,'') === this.pathname.replace(/^\//,'') && location.hostname === this.hostname) {
-            var target = $(this.hash);
+            let target = $(this.hash);
             target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
             if (target.length) {
                 $('html, body').animate({
@@ -24,14 +24,13 @@ function smoothScroll() {
 }
 function skillsList() {
     let about ='<p><h4>Software Engineer with a passion for understanding things at a fundamental level.<br>' +
-                    'Fascinated about Front-end development and Java Script frameworks.<br>' +
-                    'Focusing on learning React.JS, Angular.JS and Node.JS ..</h4></p><br>' ;
+                    'Fascinated about Front-end development and Java Script frameworks.</h4></p><br>' ;
     let skillsArr = [
-        "HTML5","CSS 3", "ES6","jQuery", "Node.JS", "Sass / SCSS", "Webpack", "Bootstrap", "GIT", "Batch", "Core JAVA","Intellij","Eclipse", "CMS: Joo    mla",
-        "Active Directory","IBM iSeries","Thin Compute","VBA","RDP","Nagios","IT Support","Data Restoration","VNC","DLNA"
+        "HTML5","CSS 3", "ES6","jQuery", "Node.JS", "Sass / SCSS", "Webpack", "Bootstrap", "GIT", "Batch", "Core JAVA","Intellij","Eclipse", "CMS: Joomla",
+        "Active Directory","IBM iSeries","Thin Compute","VBA","Nagios", "VNC","DLNA"
     ];
     let skillsHTML ="";
-    for (var i = 0; i < skillsArr.length; i++) {
+    for (let i = 0; i < skillsArr.length; i++) {
         skillsHTML += "<div style=\"display:inline-block;\"><b>{</b> " + skillsArr[i] + " <b>}</b>";
         if (i < skillsArr.length -1) {
             skillsHTML += " /</div> ";
@@ -41,9 +40,9 @@ function skillsList() {
     document.write(skillsHTML);
 }
 function projectList() {
-    var projectHTML ="";
-    var x;
-    var projectsData ={
+    let projectHTML ="";
+    let x;
+    let projectsData ={
         "weather":{
             pname:"Simple weather App",
             plink:"http://codepen.io/relikt/full/XMxGoW/",
@@ -86,9 +85,9 @@ function projectList() {
     document.write(projectHTML)
 }
 function followList() {
-    var followHTML ="";
-    var x;
-    var followData ={
+    let followHTML ="";
+    let x;
+    let followData ={
         "1":{fname:"Linkedin", flink:"https://www.linkedin.com/in/rafa%C5%82-jaworski-528437a1/", iclass:"fa-linkedin-square"},
         "2":{fname:"Facebook", flink:"https://www.facebook.com/reliktus", iclass:"fa-facebook-square"},
         "3":{fname:"GitHub", flink:"https://github.com/reliktus", iclass:"fa-github-square"},
@@ -106,9 +105,9 @@ function followList() {
     document.write(followHTML)
 }
 function linkList() {
-    var linkHTML ="";
-    var x;
-    var linkData ={
+    let linkHTML ="";
+    let x;
+    let linkData ={
         "1":{lname:"Stackoverflow", laddr:"http://stackoverflow.com/"},
         "2":{lname:"w3schools", laddr:"https://www.w3schools.com/"},
         "3":{lname:"Font Awesome", laddr:"http://fontawesome.io/"},
@@ -132,9 +131,9 @@ function linkList() {
     }
     document.write(linkHTML)
 }
-var mUser = 'jaworski.inf';
-var mDomain ='gmail.com';
-var mH1 ="mailto:";
-var mH2 ="@";
-var mFull = mUser + mH2 + mDomain;
-var mFullLink = mH1 + mFull;
+let mUser = 'jaworski.inf';
+let mDomain ='gmail.com';
+let mH1 ="mailto:";
+let mH2 ="@";
+let mFull = mUser + mH2 + mDomain;
+let mFullLink = mH1 + mFull;
