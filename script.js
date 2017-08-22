@@ -27,7 +27,7 @@ function skillsList() {
                     'Fascinated about Front-end development and Java Script frameworks.<br>' +
                     'Focusing on learning React.JS, Angular.JS and Node.JS ..</h4></p><br>' ;
     let skillsArr = [
-        "HTML5","CSS 3","ES6","jQuery","Bootstrap","Batch","GIT","Core JAVA","Intellij","Eclipse", "CMS: Joo    mla",
+        "HTML5","CSS 3","ES6","Sass / SCSS", "ES6","jQuery", "Node.JS", "Bootstrap", "Webpack","Batch","GIT","Core JAVA","Intellij","Eclipse", "CMS: Joo    mla",
         "Active Directory","IBM iSeries","Thin Compute","VBA","RDP","Nagios","IT Support","Data Restoration","VNC","DLNA"
     ];
     let skillsHTML ="";
