@@ -1,3 +1,4 @@
+
 function mobileNavbarCollpase() {
     $(".navbar-nav li a").click(function() {
         if (!$(this).parent().hasClass('dropdown'))
@@ -23,18 +24,19 @@ function smoothScroll() {
     });
 }
 function skillsList() {
-    let about ='<p><h4>Software Engineer with a passion for understanding things at a fundamental level.<br>' +
-                    'Fascinated about Front-end development and Java Script frameworks.</h4></p><br>' ;
+    let about ='<p><h5>Software Engineer with a passion for understanding things at a fundamental level.<br>' +
+                    'Fascinated about Front-end development and Java Script frameworks.</h5></p><br>' ;
     let skillsArr = [
-        "HTML5","CSS 3", "ES6","jQuery", "Node.JS", "Sass / SCSS", "Webpack", "Bootstrap", "GIT", "Batch", "Core JAVA","Intellij","Eclipse", "CMS: Joomla",
-        "Active Directory","IBM iSeries","Thin Compute","VBA","Nagios", "VNC","DLNA"
+        "HTML5","CSS 3", "ES6","jQuery", "Sass / SCSS", "Webpack", "Bootstrap", "Node.JS", "GIT", 'XAMPP',"Batch",
+        "Core JAVA","Intellij","Eclipse", "Joomla", "Active Directory","IBM iSeries","VBA",
+
     ];
-    let skillsHTML ="";
+    let skillsHTML ="<div style=\'display: inline-block\'>let skillsArray: [ </div> ";
     for (let i = 0; i < skillsArr.length; i++) {
-        skillsHTML += "<div style=\"display:inline-block;\"><b>{</b> " + skillsArr[i] + " <b>}</b>";
+        skillsHTML += "<div style=\'display: inline-block\'>\'" + skillsArr[i] ;
         if (i < skillsArr.length -1) {
-            skillsHTML += " /</div> ";
-        } else { skillsHTML += "</div>"; }
+            skillsHTML += "</b>\',</div> ";
+        } else { skillsHTML += "\' </b>];</div>"}
     }
     document.write(about);
     document.write(skillsHTML);
