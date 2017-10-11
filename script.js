@@ -45,40 +45,53 @@ function projectList() {
     let projectHTML ="";
     let x;
     let projectsData ={
+        "xero_lublin":{
+            pname:"Stamps order app for Xero-Lublin",
+            tec:"[ JS + jQuery + php ]",
+            plink:"http://xerolublin.pl/stamps/",
+            pimg:"img/stamps_order2.png"},
+        "chodzki":{
+            pname:"Webpage for CMCHODZKI",
+            tec:"[ CMS + GFX ]",
+            plink:"http://cmchodzki.pl",
+            pimg:"img/chodzki.png"},
         "weather":{
-            pname:"Simple weather App",
+            pname:"Simple weather app",
+            tec:"[ JS + jQuery + API + Bootstrap ]",
             plink:"http://codepen.io/relikt/full/XMxGoW/",
             pimg:"img/weather_app_thumb.png"},
         "wiki":{
             pname:"Wikipedia search",
+            tec:"[ JS + jQuery + API: ]",
             plink:"http://codepen.io/relikt/full/NpoaaQ/",
             pimg:"img/wiki_codepen.png"},
         "Random quote":{
             pname:"Random quote",
+            tec:" [ JS + API ]",
             plink:"http://codepen.io/relikt/full/xqjQOL/",
             pimg:"img/quote_app.png"},
         "Twitch":{
             pname:"Twitch preview",
+            tec:"[ JS + jQuery + API + Bootstrap ]",
             plink:"http://codepen.io/relikt/full/dWawzm/",
             pimg:"img/twitch_app.png"},
         "Algorithm scripting":{
             pname:"Algorithms",
+            tec:"[ JS + jQuery ]",
             plink:"https://codepen.io/relikt/full/BZQKyJ/",
             pimg:"img/algorithms.png"},
         "Calculator":{
             pname:"Calculator",
+            tec:"[ JS + jQuery ]",
             plink:"https://codepen.io/relikt/full/qjKJbQ/",
-            pimg:"img/calc.png"},
-        "chodzki":{
-            pname:"Webpage based on Joomla CMS",
-            plink:"http://cmchodzki.pl",
-            pimg:"img/chodzki.png"}
+            pimg:"img/calc.png"}
     };
     for (x in projectsData) {
         if (projectsData.hasOwnProperty(x)) {
             projectHTML +=
-                "<div class=\"col-sm-4 col-centered\">" +
-                    "<p>" + projectsData[x].pname + "</p>" +
+                "<div class=\"col-sm-4 col-centered projectContainer\">" +
+                    projectsData[x].pname +
+                    "<p>" + projectsData[x].tec + "</p>" +
                     "<a href=\"" + projectsData[x].plink + "\" target=\"_blank\">" +
                     "<img class=\"projectImg\" src=\"" + projectsData[x].pimg + "\" alt=\"" + projectsData[x].pname + "\" ></a>" +
                 "</div>";

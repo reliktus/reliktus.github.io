@@ -119,3 +119,6 @@ footer {
     text-shadow: 0 0 15px #fafdff;
     background: rgb(193, 215, 215) none !important;
 }
+.projectContainer {
+    margin-bottom: 2em;
+}
