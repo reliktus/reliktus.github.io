@@ -124,7 +124,6 @@ function linkList() {
     let x;
     let linkData ={
         "1":{lname:"Stackoverflow", laddr:"http://stackoverflow.com/"},
-        "2":{lname:"w3schools", laddr:"https://www.w3schools.com/"},
         "3":{lname:"Font Awesome", laddr:"http://fontawesome.io/"},
         "4":{lname:"GitHub", laddr:"https://github.com/"},
         "5":{lname:"Animate.css", laddr:"https://daneden.github.io/animate.css/ "},
