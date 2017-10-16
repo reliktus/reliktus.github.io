@@ -31,7 +31,7 @@ function skillsList() {
         "Core JAVA","Intellij","Eclipse", "Joomla", "Active Directory","IBM iSeries","VBA",
 
     ];
-    let skillsHTML ="<div style=\'display: inline-block\'>let skillsArray: [ </div> ";
+    let skillsHTML ="<div style=\'display: inline-block\' >let skillsArray: [ </div> ";
     for (let i = 0; i < skillsArr.length; i++) {
         skillsHTML += "<div style=\'display: inline-block\'>\'" + skillsArr[i] ;
         if (i < skillsArr.length -1) {
@@ -89,7 +89,7 @@ function projectList() {
     for (x in projectsData) {
         if (projectsData.hasOwnProperty(x)) {
             projectHTML +=
-                "<div class=\"col-sm-4 col-centered projectContainer\">" +
+                "<div class=\"wow zoomIn col-sm-4 col-centered projectContainer\" data-wow-delay=\"0.5s\">" +
                     projectsData[x].pname +
                     "<p>" + projectsData[x].tec + "</p>" +
                     "<a href=\"" + projectsData[x].plink + "\" target=\"_blank\">" +
@@ -112,9 +112,8 @@ function followList() {
     for (x in followData) {
         if (followData.hasOwnProperty(x)) {
             followHTML +=
-                "<a href=\"" + followData[x].flink + "\" class=\"follow\">" +
+                "<a href=\"" + followData[x].flink + "\" class=\"follow wow zoomIn\" data-wow-delay=\"0.5s\">" +
                 "<i class=\"fa " + followData[x].iclass + "\"></i> " + followData[x].fname + "</a>"
-
         }
     }
     document.write(followHTML)
@@ -137,7 +136,7 @@ function linkList() {
     for (x in linkData) {
         if (linkData.hasOwnProperty(x)) {
             linkHTML +=
-                "<div style=\"display:ruby \">" +
+                "<div style=\"display:ruby \" class=\"wow zoomIn\" data-wow-delay=\"0.5s\">" +
                 "<a href=\"" + linkData[x].laddr + "\" class=\"linkItem \">" + linkData[x].lname + "</a>" +
                 "</div>"
 
