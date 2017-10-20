@@ -28,16 +28,16 @@ function skillsList() {
     let about ='<p><h5>Software Engineer with a passion for understanding things at a fundamental level.<br>' +
                     'Fascinated about Front-end development and Java Script frameworks.</h5></p><br>' ;
     let skillsArr = [
-        "HTML5","CSS 3", "ES6","jQuery", "Sass / SCSS", "Webpack", "Bootstrap", "Node.JS", "GIT", 'XAMPP',"Batch",
+        "HTML5","CSS 3", "ES6","jQuery", "Sass / SCSS", "Webpack", "Bootstrap", "Node.JS", "PHP", "GIT", 'XAMPP',"Batch",
         "Core JAVA","Intellij","Eclipse", "Joomla", "Active Directory","IBM iSeries","VBA",
 
     ];
-    let skillsHTML ="<div style=\'display: inline-block\' >let skillsArray: [ </div> ";
+    let skillsHTML ="<div style=\'display: inline-block\' >let skillsArray = [ </div> ";
     for (let i = 0; i < skillsArr.length; i++) {
-        skillsHTML += "<div style=\'display: inline-block\'>\'" + skillsArr[i] ;
+        skillsHTML += "<div style=\'display: inline-block\'>\"" + skillsArr[i] ;
         if (i < skillsArr.length -1) {
-            skillsHTML += "</b>\',</div> ";
-        } else { skillsHTML += "\' </b>];</div>"}
+            skillsHTML += "</b>\",</div> ";
+        } else { skillsHTML += "\" </b>];</div>"}
     }
     document.write(about);
     document.write(skillsHTML);
@@ -90,7 +90,7 @@ function projectList() {
     for (x in projectsData) {
         if (projectsData.hasOwnProperty(x)) {
             projectHTML +=
-                "<div class=\"wow zoomIn col-sm-4 col-centered projectContainer\" data-wow-delay=\"0.5s\">" +
+                "<div class=\"wow zoomIn col-sm-4 col-centered projectContainer\" data-wow-delay=\"0.3s\">" +
                     projectsData[x].pname +
                     "<p>" + projectsData[x].tec + "</p>" +
                     "<a href=\"" + projectsData[x].plink + "\" target=\"_blank\">" +
@@ -113,7 +113,7 @@ function followList() {
     for (x in followData) {
         if (followData.hasOwnProperty(x)) {
             followHTML +=
-                "<a href=\"" + followData[x].flink + "\" class=\"follow wow zoomIn\" data-wow-delay=\"0.5s\">" +
+                "<a href=\"" + followData[x].flink + "\" class=\"follow wow zoomIn\" data-wow-delay=\"0.3s\">" +
                 "<i class=\"fa " + followData[x].iclass + "\"></i> " + followData[x].fname + "</a>"
         }
     }
@@ -137,7 +137,7 @@ function linkList() {
     for (x in linkData) {
         if (linkData.hasOwnProperty(x)) {
             linkHTML +=
-                "<div style=\"display:ruby \" class=\"wow zoomIn\" data-wow-delay=\"0.5s\">" +
+                "<div style=\"display:ruby \" class=\"wow zoomIn\" data-wow-delay=\"0.3s\">" +
                 "<a href=\"" + linkData[x].laddr + "\" class=\"linkItem \">" + linkData[x].lname + "</a>" +
                 "</div>"
 
