@@ -47,7 +47,7 @@ function projectList() {
     let x;
     let projectsData ={
         "xero_lublin":{
-            pname:"Stamps order app for Xero-Lublin",
+            pname:"Stamps SPA for Xero-Lublin",
             tec:"[ JS + jQuery + php ]",
             plink:"http://xerolublin.pl/stamps/",
             pimg:"img/stamps_order2.png"},
