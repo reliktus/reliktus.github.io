@@ -27,7 +27,7 @@ function skillsList() {
     let about = '<p><h5>Software Engineer with a passion for understanding things at a fundamental level.<br>' +
         'Fascinated about Front-end development and Java Script frameworks.</h5></p><br>';
     let skillsArr = [
-        "HTML5", "CSS 3", "JavaScript ES6", "jQuery", 'TypeScript', 'Angular 4 + CLI', "Sass / SCSS", "Webpack", "RWD: Bootstrap", "NPM", "PHP", "GIT", 'XAMPP', "Batch", "Core JAVA", "IDE: Intellij + Eclipse", "Active Directory", "VBA"
+        "HTML5 + CSS 3", "JavaScript ES6", "jQuery", 'TypeScript', 'Angular 4 + CLI', "Sass / SCSS", "Webpack", "RWD: Bootstrap", "NPM", "PHP", "GIT", 'XAMPP', "Batch", "Core JAVA", "IDE: Intellij + Eclipse", "Active Directory", "VBA"
 
     ];
     let skillsHTML = "<div style=\'display: inline-block\' >let skillsArray = [ </div> ";
