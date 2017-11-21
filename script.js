@@ -30,6 +30,7 @@ function skillsList() {
         "HTML5 + CSS 3", "JavaScript ES6", "jQuery", 'TypeScript', 'Angular 4 + CLI', "Sass / SCSS", "Webpack", "RWD: Bootstrap", "NPM", "PHP", "GIT", 'XAMPP', "Batch", "Core JAVA", "IDE: Intellij + Eclipse", "Active Directory", "VBA"
 
     ];
+    let me = '<div class="col-centered"><img class="img-thumbnail img-responsive " id="myFace" width="200px" src="img/me.jpg"></div>';
     let skillsHTML = "<div style=\'display: inline-block\' >let skillsArray = [ </div> ";
     for (let i = 0; i < skillsArr.length; i++) {
         skillsHTML += "<div style=\'display: inline-block\'>\"" + skillsArr[i];
@@ -39,8 +40,9 @@ function skillsList() {
             skillsHTML += "\" </b>];</div>"
         }
     }
-    document.write(about);
-    document.write(skillsHTML);
+
+
+    document.write(me + about + skillsHTML);
 }
 function projectList() {
     let projectHTML = "";
@@ -63,6 +65,12 @@ function projectList() {
             tec: "[ JS + jQuery + API + Bootstrap ]",
             plink: "http://codepen.io/relikt/full/XMxGoW/",
             pimg: "img/weather_app_thumb.png"
+        },
+        "fotobudka": {
+            pname: "Page for ILoveFotobudka.pl",
+            tec: "[ PHP, RWD, GFX ]",
+            plink: "http://ilovefotobudka.pl/",
+            pimg: "img/foto_budka.png"
         },
         "wiki": {
             pname: "Wikipedia search",
