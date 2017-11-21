@@ -7,6 +7,11 @@ footer {
     padding: 20px;
     font-size: 15px;
 }
+.about {
+    font-family: "Verdana", serif;
+    font-size: 18px;
+    line-height: 26px;
+}
 .col-centered {
     display:inline-block;
      float:none !important;
