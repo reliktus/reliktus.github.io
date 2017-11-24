@@ -81,7 +81,7 @@ function projectList() {
         },
         "Random quote": {
             pname: "Random quote",
-            tec: " [ JS + API ]",
+            tec: " [ JS + jQuery +API ]",
             plink: "http://codepen.io/relikt/full/xqjQOL/",
             pimg: "img/quote_app.png"
         },
@@ -154,7 +154,7 @@ function linkList() {
         "8": {lname: "4programmers.NET", laddr: "https://4programmers.net/"},
         "9": {lname: "Norton Power Eraser", laddr: "https://security.symantec.com/nbrt/npe.aspx"},
         "10": {lname: "Babel.js", laddr: "https://babeljs.io/"},
-        "11": {lname: "Node.js", laddr: "https://nodejs.org"} //http://devjs.org/
+        "11": {lname: "Node.js", laddr: "https://nodejs.org"}
     };
     for (x in linkData) {
         if (linkData.hasOwnProperty(x)) {
