@@ -81,7 +81,7 @@ function projectList() {
         },
         "Random quote": {
             pname: "Random quote",
-            tec: " [ JS + jQuery +API ]",
+            tec: " [ JS + jQuery + API + Bootstrap ]",
             plink: "http://codepen.io/relikt/full/xqjQOL/",
             pimg: "img/quote_app.png"
         },
