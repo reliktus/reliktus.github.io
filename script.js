@@ -4,10 +4,7 @@ function mobileNavbarCollpase() {
             $(".navbar-collapse").collapse('hide');
     });
 }
-function imgStyler() {
-    $(".projectImg").addClass("img-responsive img-rounded ");
-    $(".follow").addClass("btn btn-default btn-lg").attr('target', '_blank');
-}
+
 function smoothScroll() {
     $('a[href*="#"]:not([href="#"])').click(function () {
         if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
@@ -23,100 +20,7 @@ function smoothScroll() {
         }
     });
 }
-function skillsList() {
-    let about = '<p><h5 style="font-size: 16px; line-height: 22px;">' +
-        'Software Engineer with a passion for understanding things at a fundamental level.<br>' +
-        'Fascinated about Front-end development and JavaScript frameworks.</h5></p><br>';
-    let skillsArr = [
-        "HTML5 + CSS 3", "JavaScript ES6", "jQuery", 'TypeScript', 'Angular 4 + CLI', "Sass / SCSS", "Webpack", "RWD: Bootstrap", "NPM", "PHP", "GIT", 'XAMPP', "Batch", "Core JAVA", "IDE: Intellij + Eclipse", "Active Directory", "VBA"
 
-    ];
-    let me = '<div class="col-centered"><img class="img-thumbnail img-responsive " id="myFace" width="200px" src="img/me.jpg"></div>';
-    let skillsHTML = "<div style=\'display: inline-block\' >let skillsArray = [ </div> ";
-    for (let i = 0; i < skillsArr.length; i++) {
-        skillsHTML += "<div style=\'display: inline-block\'>\"" + skillsArr[i];
-        if (i < skillsArr.length - 1) {
-            skillsHTML += "</b>\",</div> ";
-        } else {
-            skillsHTML += "\" </b>];</div>"
-        }
-    }
-
-
-    document.write(me + about + skillsHTML);
-}
-function projectList() {
-    let projectHTML = "";
-    let x;
-    let projectsData = {
-        "xero_lublin": {
-            pname: "Stamps SPA for Xero-Lublin",
-            tec: "[ JS + jQuery + php ]",
-            plink: "http://xerolublin.pl/stamps/",
-            pimg: "img/stamps_order2.png"
-        },
-        "chodzki": {
-            pname: "Webpage for CMCHODZKI",
-            tec: "[ CMS + GFX ]",
-            plink: "http://cmchodzki.pl",
-            pimg: "img/chodzki.png"
-        },
-        "weather": {
-            pname: "Simple weather app",
-            tec: "[ JS + jQuery + API + Bootstrap ]",
-            plink: "http://codepen.io/relikt/full/XMxGoW/",
-            pimg: "img/weather_app_thumb.png"
-        },
-        "fotobudka": {
-            pname: "Page for ILoveFotobudka.pl",
-            tec: "[ PHP, RWD, GFX ]",
-            plink: "http://ilovefotobudka.pl/",
-            pimg: "img/foto_budka.png"
-        },
-        "wiki": {
-            pname: "Wikipedia search",
-            tec: "[ JS + jQuery + API: ]",
-            plink: "http://codepen.io/relikt/full/NpoaaQ/",
-            pimg: "img/wiki_codepen.png"
-        },
-        "Random quote": {
-            pname: "Random quote",
-            tec: " [ JS + jQuery + API + Bootstrap ]",
-            plink: "http://codepen.io/relikt/full/xqjQOL/",
-            pimg: "img/quote_app.png"
-        },
-        "Twitch": {
-            pname: "Twitch preview",
-            tec: "[ JS + jQuery + API + Bootstrap ]",
-            plink: "http://codepen.io/relikt/full/dWawzm/",
-            pimg: "img/twitch_app.png"
-        },
-        "Algorithm scripting": {
-            pname: "Algorithms",
-            tec: "[ JS + jQuery ]",
-            plink: "https://codepen.io/relikt/full/BZQKyJ/",
-            pimg: "img/algorithms.png"
-        },
-        "Calculator": {
-            pname: "Calculator",
-            tec: "[ JS + jQuery ]",
-            plink: "https://codepen.io/relikt/full/qjKJbQ/",
-            pimg: "img/calc.png"
-        }
-    };
-    for (x in projectsData) {
-        if (projectsData.hasOwnProperty(x)) {
-            projectHTML +=
-                "<div class=\"wow zoomIn col-sm-4 col-centered projectContainer\" data-wow-delay=\"0.3s\">" +
-                projectsData[x].pname +
-                "<p>" + projectsData[x].tec + "</p>" +
-                "<a href=\"" + projectsData[x].plink + "\" target=\"_blank\">" +
-                "<img class=\"projectImg\" src=\"" + projectsData[x].pimg + "\" alt=\"" + projectsData[x].pname + "\" ></a>" +
-                "</div>";
-        }
-    }
-    document.write(projectHTML)
-}
 function followList() {
     let followHTML = "";
     let x;

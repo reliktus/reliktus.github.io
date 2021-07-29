@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css"
+        integrity="sha384-dNpIIXE8U05kAbPhy3G1cz+yZmTzA6CY8Vg/u2L9xRnHjJiAK76m2BIEaSEV+/aU" crossorigin="anonymous">
+</head>
+
+<body data-spy="scroll" data-target=".navbar">
+    <script src="main.js"></script>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container col-sm-10 center-block">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#about">
+                    Rafał<span class="lastName">Jaworski</span>
+                    <i class="fa fa-location-arrow"></i>
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#projects">PROJECTS</a></li>
+                    <li><a href="#links">LINKS</a></li>
+                    <li><a href="#files">FILES</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="about" class="container-fluid text-center bg-1">
+        <div class="tittleSection">
+            <H2><i class="fa fa-user"></i> About & Areas of interest</H2>
+        </div>
+        <div class="wow zoomIn center-block about col-sm-7 js-skills-list" data-wow-delay="0.5s">
+        </div>
+    </div>
+
+    <div id="projects" class="container-fluid text-center bg-2">
+        <div class="tittleSection">
+            <h2><i class="fa fa-flask"></i> Projects</h2>
+            <p class="tittleNote">Some of my projects</p>
+        </div>
+        <div class="row col-sm-8 center-block js-projects-list">
+        </div>
+    </div>
+    <div id="links" class="container-fluid text-center bg-3 js-links-list">
+        <div class="tittleSection">
+            <h2><i class="fa fa-link"></i> Links</h2>
+            <p class="tittleNote">Useful web links</p>
+        </div>
+    </div>
+    <div id="files" class="container-fluid text-center bg-2">
+        <div class="tittleSection">
+            <h2><i class="fa fa-folder-open"></i> Files</h2>
+            <p class="tittleNote">Some files</p>
+        </div>
+        <div>
+            <a href="files/drive_map.bat_" data-toggle="tooltip"
+                title="Simple batch file that will auto-connect choosen network drive">Drive_connect.bat</a>
+        </div>
+        <div>
+            <a href="files/spooler_clear.bat_" data-toggle="tooltip"
+                title="Batch file that will clear the printing spooler from all datas, restart spooler and run it again">Spooler_clear.bat</a>
+        </div>
+    </div>
+    <div id="contact" class="container-fluid text-center bg-4 js-follow-list">
+        <div class="tittleSection">
+            <h2><i class="fa fa-globe"></i> Contact</h2>
+            <p class="tittleNote">Follow me</p>
+        </div>
+    </div>
+
+    <footer class="bg-5 text-center h-1">
+        <p>Powered by HTML5, ES6, Tailwind, Github</p>
+    </footer>
+</body>
+
+</html>

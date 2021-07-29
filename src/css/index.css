@@ -1,3 +1,5 @@
+@import "./animate.css";
+
 body {
     font: 20px Montserrat, sans-serif;
     line-height: 1.8;
@@ -13,11 +15,11 @@ footer {
     line-height: 26px;
 }
 .col-centered {
-    display:inline-block;
-     float:none !important;
+    display: inline-block;
+    float: none !important;
     /* reset the text-align */
     /* inline-block space fix */
-    margin-right:-4px;
+    margin-right: -4px;
 }
 #files a,
 #files a:active {
@@ -26,7 +28,7 @@ footer {
     text-decoration: none !important;
 }
 #files a:hover {
-    font-weight: bold ;
+    font-weight: bold;
 }
 .tittleNote {
     font-style: italic;
@@ -40,7 +42,7 @@ footer {
     text-shadow: 0 0 0 #4a4b4c;
 }
 
-.center-block{
+.center-block {
     float: none !important;
 }
 .tittleSection {
@@ -49,19 +51,22 @@ footer {
 .projectImg {
     margin: 0 auto;
     border: 0 solid;
+    max-width: 100%;
+    width: 100px;
+    height: 100px;
     max-height: 250px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
     filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
-    -webkit-transition: filter .3s linear;
-    -moz-transition: filter .3s linear;
-    -o-transition: filter .3s linear;
-    transition: filter .3s linear, box-shadow .3s linear, transform .25s ease;;
+    -webkit-transition: filter 0.3s linear;
+    -moz-transition: filter 0.3s linear;
+    -o-transition: filter 0.3s linear;
+    transition: filter 0.3s linear, box-shadow 0.3s linear, transform 0.25s ease;
 }
 /* Disable grayscale on hover */
 .projectImg:hover {
     transform: scale(1.02);
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     -webkit-filter: grayscale(0);
     filter: none;
 }
@@ -71,7 +76,7 @@ footer {
     padding-bottom: 70px;
 }
 .btn {
-    background-color:#909090;
+    background-color: #909090;
     color: #fff;
     font-size: 15px;
     margin: 5px !important;
@@ -90,7 +95,7 @@ footer {
 }
 .bg-3 {
     background-color: #c1d7d7;
-    color: #ffffff;;
+    color: #ffffff;
 }
 .bg-4 {
     background-color: #ffffff;
@@ -110,9 +115,9 @@ footer {
     letter-spacing: 5px;
     box-shadow: 0 0 25px #d1d1d1;
 }
-.navbar-default .navbar-nav>li>a {
+.navbar-default .navbar-nav > li > a {
     color: #777;
-    transition: color .3s linear;
+    transition: color 0.3s linear;
 }
 .navbar-nav li a:hover {
     color: #b2cbdb !important;
