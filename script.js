@@ -144,7 +144,6 @@ function linkList() {
     let linkHTML = "";
     let x;
     let linkData = {
-        "0": {lname: "Dev.js", laddr: "http://devjs.org/"},
         "1": {lname: "Stackoverflow", laddr: "http://stackoverflow.com/"},
         "3": {lname: "Font Awesome", laddr: "http://fontawesome.io/"},
         "4": {lname: "GitHub", laddr: "https://github.com/"},
