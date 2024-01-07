@@ -1,1 +1,39 @@
-Be back soon 😎
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <meta charset="utf-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script>
+        let body = document.querySelector('body');
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            body.classList.add('dark')
+        } else {
+            // standard
+        }
+    </script>
+    <style>
+        .dark {
+            filter: invert(95%);
+            background-color: #000000;
+        }
+
+        .dark emo {
+            filter: invert(95%);
+        }
+    </style>
+    <div class="rlkt-main d-flex justify-content-center ">
+        <h2>Be back soon <emo>😎</emo>
+        </h2>
+    </div>
+
+</body>
+
+</html>
